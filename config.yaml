@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    ritishm:
+      email: jsmith@gmail.com
+      name: Ritish Mohapatra
+      password: '$2b$12$cH6Yz22FD51MLS50EAX0QOEhD3WTVGz4y49h4EUvdwu34GaDTeFoG'
+    satyar:
+      email: rbriggs@gmail.com
+      name: Satyajit Rout
+      password: '$2b$12$PACp1JYR8UXBG91eHHedieAbNjjqmtf5yOGhKWSO4AM9rtbV3v6GS'
+cookie:
+  expiry_days: 2
+  key: random_signature_key
+  name: random_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com
