@@ -4,6 +4,7 @@ import streamlit as st
 import requests
 import streamlit as st
 from io import StringIO
+import pandas as pd
 import time
 import numpy as np
 import pandas as pd
