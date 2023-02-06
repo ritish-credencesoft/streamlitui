@@ -3,10 +3,8 @@ import yaml,csv,json
 import streamlit as st
 import requests
 import streamlit as st
-# import pandas as pd
 from io import StringIO
 import time
-# import matplotlib.pyplot as plt
 import numpy as np
 
 
@@ -35,22 +33,6 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 name, authentication_status, username= authenticator.login('Login', 'main')
-
-labels = 'Odisha', 'Mumbai', 'Pune', 'Shirdi'
-sizes = [15, 30, 45, 10]
-explode = (0, 0.1, 0, 0)  # only "explode" the 2nd slice (i.e. 'Hogs')
-
-fig1, ax1 = plt.subplots()
-fig1.set_facecolor('#00172B')
-patches, texts, autotexts  = ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-        shadow=True, startangle=90)
-texts[0].set_color('white')
-texts[1].set_color('white')
-texts[2].set_color('white')
-texts[3].set_color('white')
-ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-# st.pyplot(fig1)
 
 
 
