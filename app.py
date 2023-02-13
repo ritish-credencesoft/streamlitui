@@ -11,7 +11,6 @@ import pandas as pd
 
 
 
-
 streamlit_style = """
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
@@ -48,7 +47,7 @@ name, authentication_status, username= authenticator.login('Login', 'main')
 
 if authentication_status:
     authenticator.logout('Logout', 'main')
-    if username == 'ritishm':
+    if username == 'ritish' or username == 'samaya' or username == 'biswajit':
         st.write(f'Welcome *{name}*')
         st.title('Hotel Automation')
         uploaded_file = st.file_uploader("Choose a file")
@@ -68,7 +67,7 @@ if authentication_status:
                 my_bar.progress(percent_complete + 1)
             
             # add env vars - backend url
-            r = requests.post('http://127.0.0.1:8000/runall', json=jsonopt)
+            r = requests.post('http://127.0.0.1:8000/api/runall', json=jsonopt)
             # st.write(r.status_code)
             
     elif username == 'satyar':
