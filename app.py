@@ -10,14 +10,14 @@ import pandas as pd
 
 
 streamlit_style = """
-			<style>
-			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+            <style>
+                @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-			html, body, [class*="css"]  {
-			font-family: 'Roboto', sans-serif;
-			}
-			</style>
-			"""
+                html, body, [class*="css"]  {
+                font-family: 'Roboto', sans-serif;
+                }
+            </style>
+            """
 st.markdown(streamlit_style, unsafe_allow_html=True)
 
 with open('./style/style.css') as f:
