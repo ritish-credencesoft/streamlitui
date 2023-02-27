@@ -12,6 +12,7 @@ phases:
       - echo Building the Docker image...
       - docker -v
       - docker build -t onboarding-automation-ui .
+      - docker tag onboarding-automation-ui 153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui
   post_build:
     commands:
       - echo Build completed on `date`
