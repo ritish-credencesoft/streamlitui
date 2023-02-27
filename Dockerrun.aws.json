@@ -1,0 +1,32 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "authentication": {
+    "bucket": "elasticbeanstalk-us-east-1-971716655829",
+    "key": "dockercfg.taskmuncher/.dockercfg"
+  },
+
+  "containerDefinitions": [
+    {
+      "name": "streamlitui",
+      "image": "153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui:latest",
+      "hostname": "ui",
+      "essential": false,
+      "memory": 128
+    },
+
+    {
+      "name": "nginx",
+      "image": "johnvincentio/taskmuncher:nginx",
+      "hostname": "nginx",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 5000
+        }
+      ],
+      "links": ["streamlitui"],
+      "memory": 128
+    }
+  ]
+}
