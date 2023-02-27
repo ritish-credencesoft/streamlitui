@@ -16,4 +16,4 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 153432822124.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui
+      - docker push https://153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui:latest
