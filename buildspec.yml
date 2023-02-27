@@ -10,7 +10,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - sudo service docker restart
+      - service docker restart
       - docker -v
       - docker build -t onboarding-automation-ui .
   post_build:
