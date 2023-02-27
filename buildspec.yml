@@ -10,8 +10,8 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t onboarding-automation-ui .
       - yes | sudo apt-get update
+      - docker -v
       - docker build -t onboarding-automation-ui .
   post_build:
     commands:
