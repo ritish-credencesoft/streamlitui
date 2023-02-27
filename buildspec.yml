@@ -10,9 +10,6 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - sudo systemctl start docker
-      - sudo systemctl enable docker
-      - sudo systemctl status docker
       - docker -v
       - docker build -t onboarding-automation-ui .
   post_build:

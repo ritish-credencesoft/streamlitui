@@ -1,6 +1,6 @@
 branch-defaults:
   main:
-    environment: onboarding-automation-ui
+    environment: onboarding-automation-ui-streamlitui
     group_suffix: null
 global:
   application_name: onboarding-automation
