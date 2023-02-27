@@ -4,12 +4,17 @@ phases:
   pre_build:
     commands:
       - echo prebuild
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region ap-south-1 | docker login --username naym-khan --password-stdin 153432822124.dkr.ecr.ap-south-1.amazonaws.com
   build:
     commands:
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t onboarding-automation-ui .
       - yes | sudo apt-get update
-      - yes | sudo apt-get install python3
-      - python --version
-      - pip install -r requirements.txt
+      - docker build -t onboarding-automation-ui .
   post_build:
     commands:
       - echo Build completed on `date`
+      - echo Pushing the Docker image...
+      - docker push 153432822124.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui
