@@ -1,6 +1,6 @@
 [
   {
-    "name": "onboarding-automation",
+    "name": "oboarding-automation",
     "imageUri": "153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui:latest"
   }
 ]
