@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
 COPY . .
 
 RUN pip3 install -r requirements.txt
+RUN pip install streamlit --upgrade 
 
 EXPOSE 5000
 
