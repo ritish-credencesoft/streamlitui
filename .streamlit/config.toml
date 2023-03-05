@@ -19,4 +19,4 @@ font = "sans serif"
 
 
 [server]
-port = 5000
+port = 80
