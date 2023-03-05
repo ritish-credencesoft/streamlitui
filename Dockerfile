@@ -15,7 +15,7 @@ COPY . .
 RUN pip3 install -r requirements.txt
 RUN pip install streamlit --upgrade 
 
-EXPOSE 80
+EXPOSE 5000
 
 HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
 
