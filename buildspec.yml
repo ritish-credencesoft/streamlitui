@@ -11,14 +11,14 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...
       - docker -v
-      - docker build -t onboarding-automation-ui .
-      - docker tag onboarding-automation-ui 153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui
+      - docker build -t b1ext-onboarding-ui .
+      - docker tag b1ext-onboarding-ui 153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui
-      - printf '[{"name":"onboarding-automtion-ui","imageUri":"153432822124.dkr.ecr.ap-south-1.amazonaws.com/onboarding-automation-ui:latest"}]' > imagedefinitions.json
+      - docker push 153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui
+      - printf '[{"name":"b1ext-onboarding-ui","imageUri":"153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui:latest"}]' > imagedefinitions.json
 
 artifacts:
   files:

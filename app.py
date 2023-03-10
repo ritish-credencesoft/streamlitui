@@ -66,7 +66,8 @@ if authentication_status:
                 time.sleep(0.1)
                 my_bar.progress(percent_complete + 1)
             
-            r = requests.post('http://52.66.64.204/runall', json=jsonopt)
+            # add env vars - backend url
+            r = requests.post('http://127.0.0.1:8000/runall', json=jsonopt)
             # st.write(r.status_code)
             
     elif username == 'satyar':
