@@ -18,7 +18,7 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push 153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui
-      - printf '[{"name":"b1ext-onboarding-ui","imageUri":"153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui:latest"}]' > imagedefinitions.json
+      - printf '[{"name":"ui","imageUri":"153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui:latest"}]' > imagedefinitions.json
 
 artifacts:
   files:

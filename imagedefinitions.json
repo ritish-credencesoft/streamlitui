@@ -1,6 +1,6 @@
 [
   {
-    "name": "b1ext-onboarding-ui",
+    "name": "ui",
     "imageUri": "153432822124.dkr.ecr.ap-south-1.amazonaws.com/b1ext-onboarding-ui:latest"
   }
 ]

@@ -67,8 +67,9 @@ if authentication_status:
                 my_bar.progress(percent_complete + 1)
             
             # add env vars - backend url
-            # r = requests.post('http://127.0.0.1:8000/runall', json=jsonopt)
-            r = requests.post('https://testonboarding.bookonepms.com/api/runall', json=jsonopt)
+            # r = requests.post('http://127.0.0.1:7000/api/runall', json=jsonopt)
+            r = requests.post('http://127.0.0.1:8000/api/runall', json=jsonopt)
+            # r = requests.post('https://testonboarding.bookonepms.com/api/runall', json=jsonopt)
             # st.write(r.status_code)
             
     elif username == 'satyar':

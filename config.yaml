@@ -1,9 +1,17 @@
 credentials:
   usernames:
-    ritishm:
+    ritish:
       email: jsmith@gmail.com
       name: Ritish Mohapatra
-      password: '$2b$12$cH6Yz22FD51MLS50EAX0QOEhD3WTVGz4y49h4EUvdwu34GaDTeFoG'
+      password: '$2b$12$5vNVuuf0x0vkxt42RMgW1.TS5AU9i.9cCXyZwakV7FT5TlroogCq2'
+    ritishm:
+      email: jsmith@gmail.com
+      name: Biswajit Biswal
+      password: '$2b$12$5vNVuuf0x0vkxt42RMgW1.TS5AU9i.9cCXyZwakV7FT5TlroogCq2'
+    ritishm:
+      email: jsmith@gmail.com
+      name: Samaya Kumar Muduli
+      password: '$2b$12$5vNVuuf0x0vkxt42RMgW1.TS5AU9i.9cCXyZwakV7FT5TlroogCq2'
     satyar:
       email: rbriggs@gmail.com
       name: Satyajit Rout
